@@ -1,0 +1,82 @@
+body{
+  font-family:Arial;
+}
+
+.board-style {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 60px 60px 60px; /*Use the shorthand property "gap" instead of "column-gap" and "row-gap" */
+}
+
+.title-text{
+  text-align:center;
+}
+
+/*
+.board-align{
+  background-color: transparent;
+  display: flex; /* Use flexbox 
+  flex-direction: column; /* Stack children vertically 
+  align-items: center; /* Center horizontally 
+  justify-content: center; /* Center vertically 
+} 
+-Working, just remember to add ending comment*/ 
+
+.board-align{
+  background-color:transparent;
+  display:grid;
+  /*align-items:center;*/
+  justify-content:center;
+}
+
+.space-button{
+  cursor:pointer;
+  border-width: 5px;
+  border-color: black;
+  border-style:solid;
+  padding:0;
+  background:none;
+}
+
+#row1col1,
+#row1col2,
+#row1col3{
+  border-top:none;
+}
+#row3col1,
+#row3col2,
+#row3col3{
+  border-bottom:none;
+}
+#row1col1,
+#row2col1,
+#row3col1{
+  border-left:none;
+}
+#row1col3,
+#row2col3,
+#row3col3{
+  border-right:none;
+}
+
+.button-img {
+  width: 90%;
+  height:auto;
+  opacity:0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.button-img.loaded{
+  opacity: 1;
+}
+
+.func-button {
+  padding: 6px 10px;
+  background-color: white;
+  cursor: pointer;
+  margin-top: 30px;
+  border-width:2px;
+  border-style:solid;
+  border-color:black;
+  display:block;
+}
